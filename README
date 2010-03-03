@@ -1,0 +1,17 @@
+INSTALLATION
+
+To install this module type the following:
+
+   perl Makefile.PL
+   make
+   make test
+   make install
+
+
+
+copy script/check_raidctl into nagios plugin directory
+
+ex)
+cp script/check_raidctl /usr/local/nagios/libexec/check_raidctl
+chmod +x /usr/local/nagios/libexec/check_raidctl
+
