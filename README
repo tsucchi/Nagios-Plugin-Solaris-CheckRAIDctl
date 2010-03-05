@@ -9,9 +9,10 @@ To install this module type the following:
 
 
 
-copy script/check_raidctl into nagios plugin directory
+by default, script/check_swap is installed in /usr/local/nagios/libexec
 
-ex)
-cp script/check_raidctl /usr/local/nagios/libexec/check_raidctl
-chmod +x /usr/local/nagios/libexec/check_raidctl
+If you want to install script to other directory, configure INSTALLSITESCRIPT like following,
 
+  perl Makefile.PL INSTALLSITESCRIPT=/usr/local/nagios3.0/plugins
+
+script is installed in INSTALLSITESCRIPT directory that you specified.
