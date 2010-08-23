@@ -97,7 +97,7 @@ sub _raid_status {
 sub _exec_raidctl {
     my $self = shift;
     my $raidctl = $self->{raidctl};
-    $self->{np}->nagios_exit(UNKNOWN, 'raidctl is not found') if ( !defined $raidctl || !-x $raidctl );
+    $self->{np}->nagios_exit(UNKNOWN, 'raidctl is not found') if ( !defined $raidctl );
     my $volume = $self->_volume;
     $self->{np}->nagios_exit(UNKNOWN, 'target disk volume is undefined') if ( !defined $volume );
     my $result = `$raidctl -l $volume`;
