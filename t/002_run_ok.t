@@ -1,9 +1,10 @@
 #!/usr/bin/perl
 use strict;
 use warnings;
+use Test::Mock::ExternalCommand;
 
 use Nagios::Plugin::Solaris::CheckRAIDctl;
-use Test::Mock::ExternalCommand;
+use lib qw(/usr/home/tsucchi/work/Test-Mock-ExternalCommand/lib);
 use t::util;
 use Test::More;
 $ARGV[0]="--volume=c1t0d0";
