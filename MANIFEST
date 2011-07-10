@@ -1,7 +1,9 @@
 Changes
 inc/Module/Install.pm
+inc/Module/Install/AuthorRequires.pm
 inc/Module/Install/AuthorTests.pm
 inc/Module/Install/Base.pm
+inc/Module/Install/Can.pm
 inc/Module/Install/Makefile.pm
 inc/Module/Install/MakeMaker.pm
 inc/Module/Install/Metadata.pm
@@ -16,3 +18,10 @@ t/001_use_ok.t
 t/002_run_ok.t
 t/003_run_ng.t
 t/util.pm
+xt/module_used.t
+xt/perlcritic.t
+xt/perlcriticrc
+xt/pod.t
+xt/pod_coverage.t
+xt/script.t
+xt/synopsis.t
